@@ -30,99 +30,102 @@ function FlowerPage() {
     <div className="flower-page">
       <div className="night"></div>
       <div className="flowers">
-        {/* Flower 1 */}
         <div className="flower flower--1">
           <div className="flower__leafs flower__leafs--1">
-            <div className="flower__leaf flower__leaf--1"></div>
-            <div className="flower__leaf flower__leaf--2"></div>
-            <div className="flower__leaf flower__leaf--3"></div>
-            <div className="flower__leaf flower__leaf--4"></div>
+            <div className="flower__leaf flower__leaf--1" key="leaf1"></div>
+            <div className="flower__leaf flower__leaf--2" key="leaf2"></div>
+            <div className="flower__leaf flower__leaf--3" key="leaf3"></div>
+            <div className="flower__leaf flower__leaf--4" key="leaf4"></div>
             <div className="flower__white-circle"></div>
-
-            {/* Lights */}
-            {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className={`flower__light flower__light--${i + 1}`}
-              ></div>
-            ))}
+            <div className="flower__light flower__light--1" key="light1"></div>
+            <div className="flower__light flower__light--2" key="light2"></div>
+            <div className="flower__light flower__light--3" key="light3"></div>
+            <div className="flower__light flower__light--4" key="light4"></div>
+            <div className="flower__light flower__light--5" key="light5"></div>
+            <div className="flower__light flower__light--6" key="light6"></div>
+            <div className="flower__light flower__light--7" key="light7"></div>
+            <div className="flower__light flower__light--8" key="light8"></div>
           </div>
-
-          {/* Flower Line */}
           <div className="flower__line">
-            {[...Array(6)].map((_, i) => (
-              <div
-                key={i}
-                className={`flower__line__leaf flower__line__leaf--${i + 1}`}
-              ></div>
-            ))}
-          </div>
-        </div>
-
-        {/* Flower 2 */}
-        <div className="flower flower--2">
-          <div className="flower__leafs flower__leafs--2">
-            <div className="flower__leaf flower__leaf--1"></div>
-            <div className="flower__leaf flower__leaf--2"></div>
-            <div className="flower__leaf flower__leaf--3"></div>
-            <div className="flower__leaf flower__leaf--4"></div>
-            <div className="flower__white-circle"></div>
-
-            {/* Lights */}
-            {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className={`flower__light flower__light--${i + 1}`}
-              ></div>
-            ))}
-          </div>
-
-          {/* Flower Line */}
-          <div className="flower__line">
-            {[...Array(4)].map((_, i) => (
-              <div
-                key={i}
-                className={`flower__line__leaf flower__line__leaf--${i + 1}`}
-              ></div>
-            ))}
-          </div>
-        </div>
-
-        {/* Flower 3 */}
-        <div className="flower flower--3">
-          <div className="flower__leafs flower__leafs--3">
-            <div className="flower__leaf flower__leaf--1"></div>
-            <div className="flower__leaf flower__leaf--2"></div>
-            <div className="flower__leaf flower__leaf--3"></div>
-            <div className="flower__leaf flower__leaf--4"></div>
-            <div className="flower__white-circle"></div>
-
-            {/* Lights */}
-            {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className={`flower__light flower__light--${i + 1}`}
-              ></div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Long Grass Animation */}
-      {[...Array(3)].map((_, gIndex) => (
-        <div key={gIndex} className={`long-g long-g--${gIndex}`}>
-          {[3, 2.2, 3.4, 3.6].map((delay, leafIndex) => (
             <div
-              key={leafIndex}
-              className="grow-ans"
-              style={{ "--d": `${delay + gIndex * 0.4}s` }}
-            >
-              <div className={`leaf leaf--${leafIndex}`}></div>
-            </div>
-          ))}
+              className="flower__line__leaf flower__line__leaf--1"
+              key="lineLeaf1"
+            ></div>
+            <div
+              className="flower__line__leaf flower__line__leaf--2"
+              key="lineLeaf2"
+            ></div>
+            <div
+              className="flower__line__leaf flower__line__leaf--3"
+              key="lineLeaf3"
+            ></div>
+            <div
+              className="flower__line__leaf flower__line__leaf--4"
+              key="lineLeaf4"
+            ></div>
+            <div
+              className="flower__line__leaf flower__line__leaf--5"
+              key="lineLeaf5"
+            ></div>
+            <div
+              className="flower__line__leaf flower__line__leaf--6"
+              key="lineLeaf6"
+            ></div>
+          </div>
         </div>
-      ))}
 
+        <div class="flower flower--2">
+          <div class="flower__leafs flower__leafs--2">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__white-circle"></div>
+
+            <div class="flower__light flower__light--1"></div>
+            <div class="flower__light flower__light--2"></div>
+            <div class="flower__light flower__light--3"></div>
+            <div class="flower__light flower__light--4"></div>
+            <div class="flower__light flower__light--5"></div>
+            <div class="flower__light flower__light--6"></div>
+            <div class="flower__light flower__light--7"></div>
+            <div class="flower__light flower__light--8"></div>
+          </div>
+          <div class="flower__line">
+            <div class="flower__line__leaf flower__line__leaf--1"></div>
+            <div class="flower__line__leaf flower__line__leaf--2"></div>
+            <div class="flower__line__leaf flower__line__leaf--3"></div>
+            <div class="flower__line__leaf flower__line__leaf--4"></div>
+          </div>
+        </div>
+
+        <div class="flower flower--3">
+          <div class="flower__leafs flower__leafs--3">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__white-circle"></div>
+
+            <div class="flower__light flower__light--1"></div>
+            <div class="flower__light flower__light--2"></div>
+            <div class="flower__light flower__light--3"></div>
+            <div class="flower__light flower__light--4"></div>
+            <div class="flower__light flower__light--5"></div>
+            <div class="flower__light flower__light--6"></div>
+            <div class="flower__light flower__light--7"></div>
+            <div class="flower__light flower__light--8"></div>
+          </div>
+          <div class="flower__line">
+            <div class="flower__line__leaf flower__line__leaf--1"></div>
+            <div class="flower__line__leaf flower__line__leaf--2"></div>
+            <div class="flower__line__leaf flower__line__leaf--3"></div>
+            <div class="flower__line__leaf flower__line__leaf--4"></div>
+          </div>
+        </div>
+
+        {/* Add the rest of the flower and grass elements here */}
+      </div>
       <h1>This is the Flower Page</h1>
       <p>
         Go back to the <Link to="/">Home Page</Link>.
