@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"; // Import Link
 import HomeBG from "../assets/HomeBG.mp4";
 import Content1 from "../components/content";
 import Img1 from "../components/imgboy.jsx";
+import transition from "./transition";
 
 function homepage() {
   return (
@@ -21,4 +22,4 @@ function homepage() {
   );
 }
 
-export default homepage;
+export default transition(homepage);

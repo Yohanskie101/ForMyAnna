@@ -52,12 +52,9 @@ function Imgboy() {
               Look at this.
             </p>
             {!isTyping && (
-              <button
-                onClick={() => setShowNextText(false)}
-                className="next-button"
-              >
+              <Link to="/flower" className="next-button">
                 Next
-              </button>
+              </Link>
             )}
           </>
         )}
