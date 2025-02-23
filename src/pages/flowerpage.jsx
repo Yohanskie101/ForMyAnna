@@ -44,8 +44,24 @@ function FlowerPage() {
               ✕
             </button>
           </form>
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">Press ESC key or click on ✕ button to close</p>
+          <h3>To Anna Lisay Yau:</h3>
+          <p className="py-4">
+            Hello, Anna. I hope you find this website I created cute. Whenever
+            you feel stressed, mentally exhausted, or even if you just miss me
+            (hehe, assuming), please take a moment to check it. It’s my little
+            way of bringing a smile to your face and reminding you that you’re
+            not alone. I’m so incredibly happy I met you in Inspiro, Anna.
+            You’ve brought so much joy and meaning into my life, and I truly
+            cherish every moment we’ve shared. I really want to keep creating
+            memories with you, supporting you through everything, and being
+            someone you can always count on. You mean so much to me, and I’m
+            grateful for you every single day. Take care of yourself, and
+            remember, I’m always here for you.
+          </p>
+          <p className="py-4">
+            - Your no. 1 fan, <br />
+            Yohan
+          </p>
         </div>
       </dialog>
 
