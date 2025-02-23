@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link
 import HomeBG from '../assets/HomeBG.mp4';
 
-function Homepage() {
+function homepage() {
     return (
       <div className="homepage-container">
         {/* Video container */}
@@ -24,4 +24,4 @@ function Homepage() {
     );
   }
   
-  export default Homepage;
+  export default homepage;
