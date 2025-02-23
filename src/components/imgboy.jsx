@@ -29,35 +29,37 @@ function Imgboy() {
         <img src={img1} className="w-60" alt="Boy" />
       </div>
 
+      {/* Bubble Chat Container */}
       <div className="absolute left-36 bottom-80">
         <img src={img2} className="bubble-chat w-48" alt="Thinking Bubble" />
-      </div>
 
-      <div className="absolute left-40 top-44">
-        {!showNextText && (
-          <>
-            <p className={`anna-text ${isTyping ? "typing-effect" : ""}`}>
-              Hi, Anna!
-            </p>
-            {!isTyping && (
-              <button onClick={handleNextClick} className="next-button">
-                Next
-              </button>
-            )}
-          </>
-        )}
-        {showNextText && (
-          <>
-            <p className={`anna-text ${isTyping ? "typing-effect" : ""}`}>
-              Look at this.
-            </p>
-            {!isTyping && (
-              <Link to="/flower" className="next-button">
-                Next
-              </Link>
-            )}
-          </>
-        )}
+        {/* Text and Buttons Inside Bubble Chat */}
+        <div className="absolute left-10 top-6 w-32 text-center">
+          {!showNextText && (
+            <>
+              <p className={`anna-text ${isTyping ? "typing-effect" : ""}`}>
+                Hi, Anna!
+              </p>
+              {!isTyping && (
+                <button onClick={handleNextClick} className="next-button">
+                  Next
+                </button>
+              )}
+            </>
+          )}
+          {showNextText && (
+            <>
+              <p className={`anna-text ${isTyping ? "typing-effect" : ""}`}>
+                Look at this.
+              </p>
+              {!isTyping && (
+                <Link to="/flower" className="next-button">
+                  Next
+                </Link>
+              )}
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
