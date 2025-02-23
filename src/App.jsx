@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import Homepage from './pages/homepage'
-import Flowerpage from './pages/Flowerpage'
+import Flowerpage from './pages/flowerpage'
 
 const App = () => {
   return (

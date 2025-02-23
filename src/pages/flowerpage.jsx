@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link
 
-function Flowerpage() {
+function flowerpage() {
   return (
     <div>
       <h1>This is the Flowerpage</h1>
@@ -10,4 +10,4 @@ function Flowerpage() {
   );
 }
 
-export default Flowerpage;
+export default flowerpage;
